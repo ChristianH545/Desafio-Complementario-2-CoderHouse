@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: midnightblue;
+
+  text-align: center;
+}
+h2 {
+  color: whitesmoke;
+  background-color: midnightblue;
+  padding: 20px;
+  border: 10px solid mintcream;
+  margin: 30px;
+  text-align: center;
+}
+
+a {
+  color: rgb(58, 119, 143);
+}
+
+.div_1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 143, 192);
+  padding: 30px;
+  border: 10px solid mintcream;
+  margin: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+footer {
+  color: rgb(253, 251, 251);
+  background-color: rgb(37, 143, 192);
+  padding: 30px;
+  border: 10px solid mintcream;
+  margin: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.button1 {
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #0d6efd;
+  background-color: #fafafa;
+}
+
+.button2 {
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #0d6efd;
+  background-color: #fafafa;
+}
+
+.button3 {
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #0d6efd;
+  background-color: #fafafa;
+}
+
+.button4 {
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #0d6efd;
+  background-color: #fafafa;
+}
+.button5 {
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #0d6efd;
+  background-color: #fafafa;
+}
