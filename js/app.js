@@ -111,7 +111,7 @@ const divisas = [];
 const productosDivisas = [
   {
     nombre: "Dolar Hoy",
-    img: "./imagen_Dolar.png",
+    img: "/imagenes/imagen_Dolar.png",
     precio: 201,
     descripcion:
       "Compra y Venta de Dolares transaccion 100% online con la Confianza y Seguridad que usted merece.",
@@ -119,7 +119,7 @@ const productosDivisas = [
   },
   {
     nombre: "Bitcoin Hoy",
-    img: "./Imagen_Bitcoin.png",
+    img: "/imagenes/Imagen_Bitcoin.png",
     precio: 11576796,
     descripcion:
       "Compra y Venta de Bitcoin transaccion 100% online con la Confianza y Seguridad que usted merece.",
@@ -127,7 +127,7 @@ const productosDivisas = [
   },
   {
     nombre: "Euro Hoy",
-    img: "./imagen_Euro.png",
+    img: "/imagenes/imagen_Euro.png",
     precio: 231,
     descripcion:
       "Compra y Venta de Euros transaccion 100% online con la Confianza y Seguridad que usted merece.",
