@@ -5,6 +5,24 @@
   text-decoration: none;
   font-family: sans-serif;
 }
+h1 {
+  color: midnightblue;
+
+  text-align: center;
+}
+.subtitulo {
+  color: whitesmoke;
+  background-color: midnightblue;
+  padding: 20px;
+  border: 10px solid mintcream;
+  margin: 30px;
+  text-align: center;
+}
+
+a {
+  color: rgb(58, 119, 143);
+}
+
 body {
   background-image: url(/imagenes/fondo2.jpg);
   background-size: cover;

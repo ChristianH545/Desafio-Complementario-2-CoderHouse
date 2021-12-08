@@ -8,7 +8,16 @@
     <title>Login & Registro</title>
   </head>
   <body>
+    <h1>TRUE-CAMBIOS<h1>
+      <hr />
+      <a href="index.html" target="_blank"> INICIO</a> &VerticalLine;
+      <a href="/login.html" target="_blank">INICIO DE SESIÓN</a> &VerticalLine;
+      <a href="Acercade.html" target="_blank">ACERCA DE</a> &VerticalLine;
+      <a href="index.html" target="_blank">VOLVER AL INICIO</a> &VerticalLine;
+      <h2 class="subtitulo">BIENVENIDOS A TU CAMBIO </h2>
+      <h2 class="subtitulo">WELCOME TO YOUR CHANGE </h2>
     <main>
+     
       <!--Contenedor General -->
       <div class="contenedor__todo">
         <!--Contenedor trasero General-->
@@ -31,21 +40,24 @@
           <!--Login-->
           <form action="" class="formulario__login">
             <h2>Iniciar Sesión</h2>
-            <input type="text" placeholder="Correo Electronico" />
-            <input type="password" placeholder="Contraseña" />
+            <input id="" type="text" placeholder="Correo Electronico" />
+            <input id="" type="password" placeholder="Contraseña" />
             <button>Entrar</button>
           </form>
           <!--Registro-->
-          <form action="" class="formulario__register">
+          <form  action="" class="formulario__register">
             <h2>Registrarse</h2>
-            <input type="text" placeholder="Nombre Completo" />
-            <input type="text" placeholder="Correo Electronico" />
-            <input type="password" placeholder="Contraseña" />
-            <button>Regístrarse</button>
+            <input id="nameRegistro" type="text" placeholder="Nombre Completo" />
+            <input id="emailRegistro" type="text" placeholder="Correo Electronico" />
+            <input id="passRegistro" type="password" placeholder="Contraseña" />
+            <button id="Regístrarse" type="submit">Regístrarse</button>
+            <p class="alertas" id="alertas"></p>
           </form>
         </div>
       </div>
     </main>
     <script src="./js/login.js"></script>
+    <script src="./js/prueba.js"></script>
+    
   </body>
 </html>

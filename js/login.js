@@ -1,21 +1,5 @@
-class Usuario {
-  constructor(nombreUsuario, pass) {
-    this.nombreUsuaio = nombreUsuario;
-    this.pass = pass;
-  }
-}
-
-let usuarios = [];
-
-let usuario1 = new Usuario("christian", "1234");
-let usuario2 = new Usuario("andres", "12345");
-usuarios.push(usuario1);
-usuarios.push(usuario2);
-
 //mis eventos
-document
-  .getElementById("bnt__iniciar-sesion")
-  .addEventListener("click", iniciarSesion);
+document.getElementById("bnt__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("bnt__Regístrarse").addEventListener("click", register);
 window.addEventListener("resize", anchoPagina);
 

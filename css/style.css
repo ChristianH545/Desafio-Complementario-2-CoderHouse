@@ -17,6 +17,13 @@ h2 {
   margin: 30px;
   text-align: center;
 }
+body {
+  background-image: url(/imagenes/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 a {
   color: rgb(58, 119, 143);
