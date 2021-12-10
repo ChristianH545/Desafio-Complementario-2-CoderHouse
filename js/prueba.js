@@ -1,31 +1,4 @@
-// class Usuario {
-//   constructor(nombre, password) {
-//     this.nombre = nombre;
-//     this.password = password;
-//   }
-// }
-
-// let usuario1 = new Usuario("christian", "123");
-// let usuario2 = new Usuario("santiago", "1234");
-
-// let listaUsuarios = [];
-// listaUsuarios.push(usuario1);
-// listaUsuarios.push(usuario2);
-
-// let nombreEntrada = "christian";
-// let passwordEntrada = "123";
-
-// // forEach
-// listaUsuarios.forEach((value) => {
-//   if (value.nombre == nombreEntrada && value.password == passwordEntrada) {
-//     console.log("Si esta registrado");
-//     // ir a la pagina de cambio
-//   } else {
-//     console.log("No esta registrado");
-//   }
-// });
-guardar_LocalStorage();
-
+// creo una class registro para la creacion de Usuarios
 class Registros {
   constructor(name, email, pass) {
     this.name = name;
@@ -33,45 +6,61 @@ class Registros {
     this.pass = pass;
   }
 }
-// variables Registro
+
+// variables de Usuarios
+
+// variables de registro llamado del html
 const nameRegistro = document.querySelector("#nameRegistro");
 const emailRegistro = document.querySelector("#emailRegistro");
 const passRegistro = document.querySelector("#passRegistro");
-const formulario_register = document.querySelector(".formulario__register");
 
+//evento click del boton del form registrarse
+const botonRegistro = document.querySelector("#botonRegistro");
+botonRegistro.addEventListener("click", registroUsuarios);
 
-
-// variables de Usuarios
-let usuariosRegistrados1 = new Registros(
-  "Christian Hernandez",
-  "iverson_9000@hotmail.com",
-  "1234"
-);
-let usuariosRegistrados2 = new Registros(
-  nameRegistro.value,
-  emailRegistro.value,
-  passRegistro.value
-);
 // creo un array para el registro de usuario
 
-let resgistroDeUsuarios = [];
+let listaUsuarios = [];
 
-// realizo un push para cargar mis usuarios registrado al array
+//vamos a crear una function para guardar en local storage los usuarios dentro del array
 
-resgistroDeUsuarios.push(usuariosRegistrados1, usuariosRegistrados2);
+function registroUsuarios() {
+  //creamos una condicional para que no pise el usuario creado
+  if (!localStorage.getItem("keyUsuarios")) {
+    const usuarios = new Registros(
+      nameRegistro.value,
+      emailRegistro.value,
+      passRegistro.value
+    );
+    //realiza una carga a nuestro array
 
+    listaUsuarios.push(usuarios);
 
+    //imprimimos modo prueba en la consola el Array
+    console.log(listaUsuarios);
+  } else {
+    listaUsuarios = JSON.parse(localStorage.getItem("keyUsuarios"));
 
-//vamos a crear una function para guardar en local storage
+    const usuarios = new Registros(
+      nameRegistro.value,
+      emailRegistro.value,
+      passRegistro.value
+    );
+    //realiza una carga a nuestro array
 
-function guardar_LocalStorage() {
-  let persona1 = "";
-  localStorage.setItem("key1", JSON.stringify(persona1));
+    listaUsuarios.push(usuarios);
+
+    //imprimimos modo prueba en la consola el Array
+    console.log(listaUsuarios);
+
+    //enviamos nuestro objeto para almacenar el localStorage
+
+    localStorage.setItem("keyUsuarios", JSON.stringify(listaUsuarios));
+  }
 }
 
-//posiblemente realice un evento con dicho elemento 
-formulario_register.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  
-  })
+//un funcion para obtener los datos de los usuarios en localStorage
+function obtenerUsuarios() {
+  const usuariosAlmacenados = JSON.parse(localStorage.getItem("listaUsuarios"));
+  console.log(usuariosAlmacenados);
+}

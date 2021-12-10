@@ -156,7 +156,7 @@ for (producto of productosDivisas) {
 </div>`;
 }
 
-/* ------ Function Manipulacion del DOM  ------ */
+/* ------ ejecucion  Function Manipulacion del DOM  ------ */
 Input1();
 Input2();
 Input3();
